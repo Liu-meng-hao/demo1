@@ -1,0 +1,30 @@
+2025-03-01 08:30:15 [INFO] System startup initiated
+2025-03-01 08:30:16 [INFO] Loading configuration from /etc/app/config.yaml
+2025-03-01 08:30:17 [WARN] Deprecated parameter 'timeout' found in config
+2025-03-01 08:30:18 [INFO] Database connection pool initialized
+2025-03-01 08:30:20 [ERROR] Failed to connect to database server at 192.168.1.100:5432
+2025-03-01 08:30:21 [ERROR] Connection timeout after 30000ms
+2025-03-01 08:30:22 [INFO] Retrying database connection (attempt 2/3)
+2025-03-01 08:30:25 [INFO] Database connection established successfully
+2025-03-01 08:30:26 [INFO] Cache service started on port 6379
+2025-03-01 08:30:27 [WARN] Memory usage at 78%, approaching threshold
+2025-03-01 08:31:00 [INFO] HTTP server listening on port 8080
+2025-03-01 08:31:05 [INFO] Request received: GET /api/health
+2025-03-01 08:31:06 [INFO] Response sent: 200 OK
+2025-03-01 08:32:10 [ERROR] Exception occurred while processing request
+2025-03-01 08:32:11 [ERROR] Stack trace: java.lang.NullPointerException at Handler.java:45
+2025-03-01 08:32:12 [WARN] Request processing took 5234ms, exceeding SLA
+2025-03-01 08:35:00 [INFO] Scheduled task 'cleanup' started
+2025-03-01 08:35:05 [INFO] Cleanup task completed, removed 1250 expired sessions
+2025-03-01 08:40:00 [WARN] Disk usage at 85% on partition /var/log
+2025-03-01 08:45:00 [ERROR] Authentication failed for user 'admin' from IP 10.0.0.15
+2025-03-01 08:50:00 [INFO] System health check passed
+2025-03-01 08:50:01 [WARN] Network latency detected, avg response time 245ms
+2025-03-01 08:55:00 [ERROR] Service unavailable: payment gateway returned 503
+2025-03-01 08:55:01 [ERROR] Transaction failed for order #12345
+2025-03-01 09:00:00 [INFO] Daily backup process started
+2025-03-01 09:15:00 [INFO] Backup completed successfully
+2025-03-01 09:30:00 [INFO] User login successful: user123
+2025-03-01 09:30:05 [INFO] Session created for user123
+2025-03-01 09:35:00 [WARN] CPU usage spike detected: 95%
+2025-03-01 09:35:30 [INFO] CPU usage normalized: 45%

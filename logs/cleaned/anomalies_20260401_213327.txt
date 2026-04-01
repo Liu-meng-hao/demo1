@@ -1,0 +1,23 @@
+[ERROR] ALL_FILES:4 - [2025-03-01 10:00:03] [ERROR] Payment validation failed: Invalid card number
+[WARNING] ALL_FILES:11 - [2025-03-01 10:10:00] [WARN] Slow query detected: SELECT * FROM orders WHERE status='PENDING'
+[WARNING] ALL_FILES:12 - [2025-03-01 10:10:01] [WARN] Query execution time: 4500ms
+[ERROR] ALL_FILES:14 - [2025-03-01 10:15:00] [ERROR] Database connection lost
+[ERROR] ALL_FILES:15 - [2025-03-01 10:15:01] [ERROR] Reconnection attempt 1 failed
+[ERROR] ALL_FILES:16 - [2025-03-01 10:15:05] [ERROR] Reconnection attempt 2 failed
+[WARNING] ALL_FILES:21 - [2025-03-01 10:25:00] [WARNING] Thread pool exhausted, all 50 threads in use
+[WARNING] ALL_FILES:22 - [2025-03-01 10:25:01] [WARNING] Request queued, current queue size: 15
+[ERROR] ALL_FILES:24 - [2025-03-01 10:30:00] [ERROR] File not found: /data/uploads/document.pdf
+[ERROR] ALL_FILES:25 - [2025-03-01 10:30:01] [ERROR] IOException: Permission denied accessing /data/uploads
+[WARNING] ALL_FILES:39 - 2025-03-01 08:30:17 [WARN] Deprecated parameter 'timeout' found in config
+[ERROR] ALL_FILES:41 - 2025-03-01 08:30:20 [ERROR] Failed to connect to database server at 192.168.1.100:5432
+[ERROR] ALL_FILES:42 - 2025-03-01 08:30:21 [ERROR] Connection timeout after 30000ms
+[WARNING] ALL_FILES:46 - 2025-03-01 08:30:27 [WARN] Memory usage at 78%, approaching threshold
+[ERROR] ALL_FILES:50 - 2025-03-01 08:32:10 [ERROR] Exception occurred while processing request
+[ERROR] ALL_FILES:51 - 2025-03-01 08:32:11 [ERROR] Stack trace: java.lang.NullPointerException at Handler.java:45
+[WARNING] ALL_FILES:52 - 2025-03-01 08:32:12 [WARN] Request processing took 5234ms, exceeding SLA
+[WARNING] ALL_FILES:55 - 2025-03-01 08:40:00 [WARN] Disk usage at 85% on partition /var/log
+[ERROR] ALL_FILES:56 - 2025-03-01 08:45:00 [ERROR] Authentication failed for user 'admin' from IP 10.0.0.15
+[WARNING] ALL_FILES:58 - 2025-03-01 08:50:01 [WARN] Network latency detected, avg response time 245ms
+[ERROR] ALL_FILES:59 - 2025-03-01 08:55:00 [ERROR] Service unavailable: payment gateway returned 503
+[ERROR] ALL_FILES:60 - 2025-03-01 08:55:01 [ERROR] Transaction failed for order #12345
+[WARNING] ALL_FILES:65 - 2025-03-01 09:35:00 [WARN] CPU usage spike detected: 95%

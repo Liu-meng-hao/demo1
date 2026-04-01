@@ -1,0 +1,36 @@
+[2025-03-01 10:00:00] [DEBUG] Entering function: processOrder
+[2025-03-01 10:00:01] [INFO] Processing order #98765 for customer CUST001
+[2025-03-01 10:00:02] [INFO] Validating payment information
+[2025-03-01 10:00:03] [ERROR] Payment validation failed: Invalid card number
+[2025-03-01 10:00:04] [INFO] Order #98765 status changed to REJECTED
+[2025-03-01 10:05:00] [INFO] Processing order #98766 for customer CUST002
+[2025-03-01 10:05:01] [INFO] Payment authorized successfully
+[2025-03-01 10:05:02] [INFO] Inventory check passed
+[2025-03-01 10:05:03] [INFO] Order #98766 confirmed
+[2025-03-01 10:05:04] [INFO] Email notification sent to customer
+[2025-03-01 10:10:00] [WARN] Slow query detected: SELECT * FROM orders WHERE status='PENDING'
+[2025-03-01 10:10:01] [WARN] Query execution time: 4500ms
+[2025-03-01 10:10:02] [INFO] Query optimization recommended
+[2025-03-01 10:15:00] [ERROR] Database connection lost
+[2025-03-01 10:15:01] [ERROR] Reconnection attempt 1 failed
+[2025-03-01 10:15:05] [ERROR] Reconnection attempt 2 failed
+[2025-03-01 10:15:10] [INFO] Database connection restored
+[2025-03-01 10:20:00] [INFO] Cache miss for key: user_profile_123
+[2025-03-01 10:20:01] [INFO] Loading user profile from database
+[2025-03-01 10:20:02] [INFO] User profile cached for 3600 seconds
+[2025-03-01 10:25:00] [WARNING] Thread pool exhausted, all 50 threads in use
+[2025-03-01 10:25:01] [WARNING] Request queued, current queue size: 15
+[2025-03-01 10:25:30] [INFO] Thread available, processing queued request
+[2025-03-01 10:30:00] [ERROR] File not found: /data/uploads/document.pdf
+[2025-03-01 10:30:01] [ERROR] IOException: Permission denied accessing /data/uploads
+[2025-03-01 10:30:02] [INFO] Alert sent to operations team
+[2025-03-01 10:35:00] [INFO] Scheduled maintenance window started
+[2025-03-01 10:35:01] [INFO] Stopping non-essential services
+[2025-03-01 10:35:05] [INFO] Services stopped successfully
+[2025-03-01 10:40:00] [INFO] Maintenance completed
+[2025-03-01 10:40:01] [INFO] Restarting services
+[2025-03-01 10:40:10] [INFO] All services operational
+[2025-03-01 10:45:00] [DEBUG] Memory usage: 512MB heap, 128MB non-heap
+[2025-03-01 10:45:01] [DEBUG] Garbage collection completed, freed 128MB
+[2025-03-01 10:50:00] [INFO] Daily statistics report generated
+[2025-03-01 10:50:01] [INFO] Report saved to /var/reports/daily_20250301.csv
