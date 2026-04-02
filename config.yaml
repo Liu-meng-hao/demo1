@@ -1,0 +1,84 @@
+# 日志清洗与统计分析工具配置文件
+
+# 输入输出路径配置（相对路径）
+paths:
+  raw_logs: "./logs/raw/"
+  cleaned_logs: "./logs/cleaned/"
+  reports: "./reports/"
+
+# 日志格式配置
+log_format:
+  # 支持的时间戳格式列表
+  timestamp_formats:
+    - "%Y-%m-%d %H:%M:%S"
+    - "%Y/%m/%d %H:%M:%S"
+    - "%d-%m-%Y %H:%M:%S"
+    - "%m/%d/%Y %H:%M:%S"
+  # 统一输出的时间戳格式
+  output_timestamp_format: "%Y-%m-%d %H:%M:%S"
+  # 日志行正则匹配模式（用于验证格式）
+  # 匹配格式: [TIMESTAMP] [LEVEL] MESSAGE
+  log_line_pattern: "^\\[?(\\d{4}[-/]\\d{2}[-/]\\d{2}\\s+\\d{2}:\\d{2}:\\d{2})\\]?\\s*\\[?(ERROR|WARN|WARNING|INFO|DEBUG|TRACE)\\]?\\s*(.+)$"
+
+# 关键词统计配置
+keywords:
+  # 是否加载项目根目录下的 keywords.txt 文件
+  load_from_file: true
+  keywords_file: "./keywords.txt"
+  # 额外自定义关键词列表
+  custom_keywords:
+    - "database"
+    - "connection"
+    - "timeout"
+    - "memory"
+    - "disk"
+
+# 异常标识配置
+anomaly_markers:
+  # 错误级别标识
+  error_levels:
+    - "ERROR"
+    - "FATAL"
+    - "CRITICAL"
+  # 警告级别标识
+  warning_levels:
+    - "WARN"
+    - "WARNING"
+  # 异常关键词（用于识别异常日志）
+  anomaly_keywords:
+    - "exception"
+    - "failed"
+    - "failure"
+    - "error"
+    - "timeout"
+    - "refused"
+    - "denied"
+    - "unavailable"
+
+# 清洗规则配置
+cleaning_rules:
+  # 是否去除空行
+  remove_empty_lines: true
+  # 是否去除首尾空白字符
+  trim_whitespace: true
+  # 是否去除重复行
+  remove_duplicates: false
+  # 最小日志行长度（小于此长度的视为无效）
+  min_line_length: 10
+  # 是否统一时间戳格式
+  normalize_timestamp: true
+
+# 报告生成配置
+report:
+  # 报告标题
+  title: "日志清洗与分析报告"
+  # 是否包含原始文件列表
+  include_file_list: true
+  # 是否包含清洗统计
+  include_cleaning_stats: true
+  # 是否包含关键词统计详情
+  include_keyword_details: true
+  # 是否包含异常日志详情
+  include_anomaly_details: true
+  # 异常日志最大显示条数（0表示不限制）
+  max_anomaly_display: 100

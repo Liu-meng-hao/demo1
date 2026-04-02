@@ -1,0 +1,74 @@
+# 日志关键词基准文件
+# 本文件为只读文件，仅用于提供关键词基准，程序不得修改此文件
+# 每行一个关键词，以 # 开头的行为注释行
+
+# 系统相关关键词
+system
+process
+thread
+service
+application
+server
+client
+
+# 网络相关关键词
+network
+socket
+http
+https
+tcp
+udp
+request
+response
+
+# 数据库相关关键词
+sql
+database
+db
+query
+transaction
+commit
+rollback
+
+# 存储相关关键词
+file
+directory
+path
+storage
+read
+write
+io
+
+# 性能相关关键词
+performance
+latency
+throughput
+memory
+cpu
+usage
+load
+
+# 安全相关关键词
+authentication
+authorization
+login
+logout
+session
+token
+permission
+
+# 错误相关关键词
+error
+exception
+failure
+failed
+abort
+crash
+
+# 状态相关关键词
+status
+state
+active
+inactive
+pending
+completed
